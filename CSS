@@ -1,0 +1,89 @@
+.Infos {
+    grid-area: Infos;
+    font-size: 1.2em;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Bild-text {
+    font-family: 'Roboto';
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Bild-7, .Bild-8, .Bild-9, .Bild-10 {
+    padding: 10px 10px 7px 10px;
+    border: var(--light) 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Bild-1 {
+    grid-area: Bild-1;
+}
+
+.Bild-2 {
+    grid-area: Bild-2;
+}
+
+.Bild-3 {
+    grid-area: Bild-3;
+}
+
+.Bild-4 {
+    grid-area: Bild-4;
+}
+
+.Bild-5 {
+    grid-area: Bild-5;
+}
+
+.Bild-6 {
+    grid-area: Bild-6;
+}
+
+.Bild-7 {
+    grid-area: Bild-7;
+}
+
+.Bild-8 {
+    grid-area: Bild-8;
+}
+
+.Bild-9 {
+    grid-area: Bild-9;
+}
+
+.Bild-10 {
+    grid-area: Bild-10;
+}
+
+.Donation {
+    grid-area: Donation;
+}
+
+#Donate-Button {
+    width: 100%;
+    background-color: var(--darkgreen);
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
+#Donate-Button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+
+/* h1 {
+    margin: 0.5em;
+    text-align: center;
+    font-size: 3em;
+} */
