@@ -10,7 +10,7 @@
     word-wrap: break-word;
 }
 
-.Infos, .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Bild-7, .Bild-8, .Bild-9, .Bild-10, .Donation, .Footer {
+.Infos, .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Donation, .Footer {
     margin: 0px 20px 0px 20px;
 }
 
@@ -36,10 +36,6 @@
         "Bild-4"
         "Bild-5"
         "Bild-6"
-        "Bild-7"
-        "Bild-8"
-        "Bild-9"
-        "Bild-10"
         "Donation"
         "Footer";
 }
@@ -80,7 +76,7 @@ img {
     font-size: 25px;
 }
 
-.Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Bild-7, .Bild-8, .Bild-9, .Bild-10 {
+.Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6 {
     padding: 10px 10px 7px 10px;
     border: var(--light) 1px solid;
     border-radius: 10px;
@@ -111,22 +107,6 @@ img {
     grid-area: Bild-6;
 }
 
-.Bild-7 {
-    grid-area: Bild-7;
-}
-
-.Bild-8 {
-    grid-area: Bild-8;
-}
-
-.Bild-9 {
-    grid-area: Bild-9;
-}
-
-.Bild-10 {
-    grid-area: Bild-10;
-}
-
 .Donation {
     grid-area: Donation;
 }
@@ -147,19 +127,34 @@ img {
     grid-area: Footer;
 }
 
-
-/* h1 {
-    margin: 0.5em;
-    text-align: center;
-    font-size: 3em;
-} */
-
 @media all and (min-width: 600px) { 
-.Bild {
-    width: 50%;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-}
+    .Bild {
+        width: 1fr;
+        height: 1fr;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
 
-}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 20px 20px;
+        grid-template-areas:
+            "Startseite Startseite Startseite"
+            "Infos Infos Infos"
+            "Bild-1 Bild-2 Bild-3 "
+            "Bild-4 Bild-5 Bild-6"
+            "Donation Donation Donation"
+            "Footer Footer Footer";
+    }
+
+    .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6 {
+        padding: 10px 10px 7px 10px;
+        border: var(--light) 1px solid;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    }
