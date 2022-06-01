@@ -1,3 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: var(--dark);
+    color: var(--light);
+    word-wrap: break-word;
+}
+
+.Infos, .Bild-1, .Bild-2, .Bild-3, .Bild-4, .Bild-5, .Bild-6, .Bild-7, .Bild-8, .Bild-9, .Bild-10, .Donation, .Footer {
+    margin: 0px 20px 0px 20px;
+}
+
+:root {
+    --dark: #080f0e;
+    --light: #fcf2eb;
+    --darkgreen: #006A00;
+    --limegreen: #A5C72C;
+    --orange: #C7990A;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 20px 20px;
+    grid-template-areas:
+        "Startseite"
+        "Infos"
+        "Bild-1"
+        "Bild-2"
+        "Bild-3"
+        "Bild-4"
+        "Bild-5"
+        "Bild-6"
+        "Bild-7"
+        "Bild-8"
+        "Bild-9"
+        "Bild-10"
+        "Donation"
+        "Footer";
+}
+
+.Startseite {
+    grid-area: Startseite;
+    /* background-image: url("../images/capybara-in-a-bucket.gif"); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#titel {
+    line-height: 100vh;
+    font-size: 2em;
+    font-family: 'Merriweather';
+    background: transparent;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 .Infos {
     grid-area: Infos;
     font-size: 1.2em;
